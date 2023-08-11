@@ -13,7 +13,8 @@ public class CompoundInterest {
         int years = scan.nextInt();
 
         double value = (initialInv * Math.pow((1 + (interestRate/compoundsPYear)), (compoundsPYear * years)));
-        System.out.println("$" + (round(value, 2)));
+        System.out.println("Total $: " + (round(value, 2)));
+        System.out.println("New $: " + (round(value - initialInv, 2)));
     }
 
     private static double round (double value, int precision) {
