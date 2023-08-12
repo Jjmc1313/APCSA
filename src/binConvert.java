@@ -21,11 +21,8 @@ public class binConvert {
         if (spaces) {
             for (int i = 0; i < input.length(); i++) {
                 binary[i] = Integer.toBinaryString(input.charAt(i));
-                concatBinary.append(binary[i]).append(" ");}
-        } else {
-            for (int i = 0; i < input.length(); i++) {
+                concatBinary.append(binary[i]).append(" ");}} else {for (int i = 0; i < input.length(); i++) {
                 binary[i] = Integer.toBinaryString(input.charAt(i));
-                concatBinary.append(binary[i]);}
-        } return (concatBinary.toString());
+                concatBinary.append(binary[i]);}} return (concatBinary.toString());
     }
 }
