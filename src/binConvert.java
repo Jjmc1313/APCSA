@@ -1,3 +1,4 @@
+import java.util.Objects;
 import java.util.Scanner;
 
 public class binConvert {
@@ -8,23 +9,23 @@ public class binConvert {
         System.out.println("Spaces (Y/N):");
         String space = scan.nextLine();
         boolean spaces;
-        if (space != "Y") { spaces = false;} else {spaces = true;}
+        spaces = Objects.equals(space, "Y");
         System.out.println(stringToBin(input, spaces));
     }
 
     private static String stringToBin (String input, boolean spaces) {
         String[] binary;
         binary = new String[input.length()];
-        String concatBinary = "";
+        StringBuilder concatBinary = new StringBuilder();
 
         if (spaces) {
             for (int i = 0; i < input.length(); i++) {
                 binary[i] = Integer.toBinaryString(input.charAt(i));
-                concatBinary += binary[i] + " ";}
+                concatBinary.append(binary[i]).append(" ");}
         } else {
             for (int i = 0; i < input.length(); i++) {
                 binary[i] = Integer.toBinaryString(input.charAt(i));
-                concatBinary += binary[i];}
-        } return (concatBinary);
+                concatBinary.append(binary[i]);}
+        } return (concatBinary.toString());
     }
 }
