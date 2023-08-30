@@ -1,3 +1,5 @@
+package Unit4.Problems;
+
 import java.util.Scanner;
 
 public class WhileLoop {
