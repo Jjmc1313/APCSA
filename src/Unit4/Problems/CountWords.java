@@ -1,4 +1,4 @@
-from Unit4.Problems;
+package Unit4.Problems;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;
