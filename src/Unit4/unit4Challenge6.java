@@ -1,4 +1,4 @@
-package unit4;
+package Unit4;
 import java.util.Scanner;
 
 public class unit4Challenge6 {
