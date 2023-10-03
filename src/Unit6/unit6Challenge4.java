@@ -1,12 +1,9 @@
 package Unit6;
 
 import java.util.Random;
-import java.util.Arrays;
 
 public class unit6Challenge4 {
     public static void main(String[] args) {
-        int cardCount = 0;
-
         int[] spades = new int[13];
         int[] hearts = new int[13];
         int[] diamonds = new int[13];
