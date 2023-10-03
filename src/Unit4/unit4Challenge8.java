@@ -27,9 +27,7 @@ public class unit4Challenge8 {
                     if (roulette == redVals[i]) {
                         isRed = true;
                     }
-                    // System.out.print(isRed + " ");
                 }
-                // System.out.println("\n");
             } else {
                 zero = true;
             }
