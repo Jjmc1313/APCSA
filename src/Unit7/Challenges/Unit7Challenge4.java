@@ -49,5 +49,7 @@ public class Unit7Challenge4 {
             }
             o++;
         }
+        int[] scoreNew = new int[scores.size()];
+        String namesNew = Arrays.toString(new String[names.size()]);
     }
 }
