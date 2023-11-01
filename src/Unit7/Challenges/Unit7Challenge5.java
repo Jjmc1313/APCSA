@@ -44,10 +44,16 @@ public class Unit7Challenge5 {
         interestRate += 3;
     }
     public static void deposit(String holder, double amount) {
-        if (accounts.contains(holder)) {
-            balances.set(accounts.indexOf(holder), balances.get(accounts.indexOf(holder)) + amount);
-        } else {
+        boolean containsH = false;
+        try {
+            containsH = accounts.contains(holder);
+        }
+        catch(Exception e) {
+            containsH = false;
             System.out.println("Account with name " + holder + " does not exist!");
+        }
+        if (containsH) {
+            balances.set(accounts.indexOf(holder), balances.get(accounts.indexOf(holder)) + amount);
         }
     }
 }
