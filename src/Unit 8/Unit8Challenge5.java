@@ -1,5 +1,5 @@
-import java.utils.Arrays;
-import java.utils.Scanner;
+import java.util.Arrays;
+import java.util.Scanner;
 
 class Main{
   public static void main(String args[]){
@@ -7,7 +7,7 @@ class Main{
     
     char a = 'a';
     for (int i = 0; i < 5; i++) {
-      stuScores[0][i] = String.valueOf(a)
+      stuScores[0][i] = String.valueOf(a);
       a++;
     }
     
